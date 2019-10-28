@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="40.896837">
+<testcase classname="NHS treatment help checker tool for person from Wales" name="Verify that the user should gets help with nhs costs page(Age above 19 below 60)" time="19.67774">
+<system-out><![CDATA[Given User launch the NHS Costs Checker tool application....................passed
+And user has selected start Button..........................................passed
+And user has selected country as "Wales" and click on next button...........passed
+When the user enters the date of birth above nineteen below sixty click on Next Button.passed
+And user selects living with partner as yes and click next button...........passed
+And user selects for claim any benifits or credits as no and click next button in page.passed
+And user selects for pregnant or have you given birth in the last 12 months as no and click next button in page.passed
+And user selects for an injury or illness caused by serving in the armed forces as no and click next button in page.passed
+And user selects for diabetes as no and click next button in page...........passed
+And user selects for glaucoma as no and click next button in page...........passed
+And user selects for partner live permanently in a care home as no and click next button in page.passed
+And user selects for you and your partner have more than £16,000 in savings, investments or property as no and click next button in page.passed
+Then user should get a result of get help with NHS costs page...............passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS treatment help checker tool for person from Wales" name="Verify that the user can get help with NHS Costs when the age is under 16" time="6.163402">
+<system-out><![CDATA[Given User launch the NHS Costs Checker tool application....................passed
+And user has selected start Button..........................................passed
+And user has selected country as "Wales" and click on next button...........passed
+When the user enters the date of birth under sixteen and click on Next Button.passed
+Then user should get a under sixteen result of get help with NHS costs page.passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS treatment help checker tool for person from Wales" name="Verify that the user gets Full time education question page when their age is between 16 to 19" time="7.943186">
+<system-out><![CDATA[Given User launch the NHS Costs Checker tool application....................passed
+And user has selected start Button..........................................passed
+And user has selected country as "Wales" and click on next button...........passed
+When the user enters the date of birth between sixteen and nineteen and click on Next Button.passed
+Then user should get full-time education page...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="NHS treatment help checker tool for person from Wales" name="Verify that the user gets Partner page question when their age is 60 and above" time="7.112509">
+<system-out><![CDATA[Given User launch the NHS Costs Checker tool application....................passed
+And user has selected start Button..........................................passed
+And user has selected country as "Wales" and click on next button...........passed
+When the user enters the date of birth above sixty and click on Next Button.passed
+Then user should get Partner page question..................................passed
+]]></system-out>
+</testcase>
+</testsuite>
